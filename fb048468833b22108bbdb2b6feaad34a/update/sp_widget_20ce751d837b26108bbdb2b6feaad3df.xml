@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.poster_holder {&#13;
+display: flex;&#13;
+justify-content: center;&#13;
+}&#13;
+ &#13;
+#poster_image {&#13;
+width: 350px;&#13;
+height: auto;&#13;
+border-radius: 10px;&#13;
+background: #e0e0e0;&#13;
+box-shadow:  6px 6px 12px #9f9f9f,&#13;
+             -6px -6px 12px #ffffff;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>poster</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>poster</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 13:13:42</sys_created_on>
+        <sys_id>20ce751d837b26108bbdb2b6feaad3df</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>poster</sys_name>
+        <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
+        <sys_update_name>sp_widget_20ce751d837b26108bbdb2b6feaad3df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 14:24:49</sys_updated_on>
+        <template><![CDATA[<div class = "poster_holder">
+<img src="" id="poster_image" />
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>20ce751d837b26108bbdb2b6feaad3df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 13:13:42</sys_created_on>
+        <sys_id>5e3f7999837b26108bbdb2b6feaad3de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 13:13:42</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

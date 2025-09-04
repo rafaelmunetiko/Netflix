@@ -44,7 +44,7 @@
         <mask_use_encryption>false</mask_use_encryption>
         <name>average_rating</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>200</order>
+        <order>120</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-09-03 20:04:36</sys_created_on>
         <sys_id>c9e2d209833be2108bbdb2b6feaad3c7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>average_rating</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Average Rating</sys_name>
         <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
         <sys_update_name>item_option_new_c9e2d209833be2108bbdb2b6feaad3c7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-04 12:56:12</sys_updated_on>
+        <sys_updated_on>2025-09-04 13:30:35</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

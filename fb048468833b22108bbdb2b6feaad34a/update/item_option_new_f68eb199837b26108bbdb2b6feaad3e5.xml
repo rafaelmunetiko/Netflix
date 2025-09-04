@@ -5,8 +5,8 @@
         <cat_item display_value="Media Review">82df2d4d8377e2108bbdb2b6feaad346</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
-        <choice_field>rating</choice_field>
-        <choice_table>x_752538_netflix_review</choice_table>
+        <choice_field/>
+        <choice_table/>
         <conversational_label/>
         <create_roles/>
         <default_html_value/>
@@ -22,12 +22,12 @@
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
-        <field>rating</field>
+        <field/>
         <global>false</global>
         <help_tag>More information</help_tag>
-        <help_text>rating</help_text>
+        <help_text/>
         <hidden>false</hidden>
-        <include_none>true</include_none>
+        <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
         <list_table/>
@@ -39,17 +39,17 @@
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
-        <map_to_field>true</map_to_field>
+        <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>rating</name>
+        <name>poster</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>200</order>
+        <order>160</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>What rating would you give to this movie, series, or episode (e.g., from 1 to 10)?</question_text>
+        <question_text>Poster</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -69,28 +69,28 @@
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
 */]]></save_script>
-        <scale_max>10</scale_max>
-        <scale_min>1</scale_min>
-        <show_help>true</show_help>
+        <scale_max>5</scale_max>
+        <scale_min>0</scale_min>
+        <show_help>false</show_help>
         <show_help_on_load>false</show_help_on_load>
-        <sp_widget/>
+        <sp_widget display_value="poster">20ce751d837b26108bbdb2b6feaad3df</sp_widget>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-03 17:44:21</sys_created_on>
-        <sys_id>c643b94183b7e2108bbdb2b6feaad334</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>What rating would you give to this movie, series, or episode (e.g., from 1 to 10)?</sys_name>
+        <sys_created_on>2025-09-04 13:11:09</sys_created_on>
+        <sys_id>f68eb199837b26108bbdb2b6feaad3e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Poster</sys_name>
         <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
-        <sys_update_name>item_option_new_c643b94183b7e2108bbdb2b6feaad334</sys_update_name>
+        <sys_update_name>item_option_new_f68eb199837b26108bbdb2b6feaad3e5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-04 13:30:50</sys_updated_on>
+        <sys_updated_on>2025-09-04 13:30:47</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>5</type>
+        <type>14</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -106,22 +106,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=c643b94183b7e2108bbdb2b6feaad334"/>
-    <fx_price action="delete_multiple" query="id=c643b94183b7e2108bbdb2b6feaad334"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=f68eb199837b26108bbdb2b6feaad3e5"/>
+    <fx_price action="delete_multiple" query="id=f68eb199837b26108bbdb2b6feaad3e5"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>price_if_checked</field>
-        <id>c643b94183b7e2108bbdb2b6feaad334</id>
+        <id>f68eb199837b26108bbdb2b6feaad3e5</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-03 17:44:21</sys_created_on>
-        <sys_id>5193398183b7e2108bbdb2b6feaad3dd</sys_id>
+        <sys_created_on>2025-09-04 13:11:09</sys_created_on>
+        <sys_id>09aeb11d837b26108bbdb2b6feaad3ad</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-03 17:44:21</sys_updated_on>
+        <sys_updated_on>2025-09-04 13:11:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -129,17 +129,28 @@
         <amount>0</amount>
         <currency display_value="BRL">BRL</currency>
         <field>rec_price_if_checked</field>
-        <id>c643b94183b7e2108bbdb2b6feaad334</id>
+        <id>f68eb199837b26108bbdb2b6feaad3e5</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-03 17:44:21</sys_created_on>
-        <sys_id>d593398183b7e2108bbdb2b6feaad3dc</sys_id>
+        <sys_created_on>2025-09-04 13:11:09</sys_created_on>
+        <sys_id>c5aeb11d837b26108bbdb2b6feaad3ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-03 17:44:21</sys_updated_on>
+        <sys_updated_on>2025-09-04 13:11:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>f68eb199837b26108bbdb2b6feaad3e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 13:11:09</sys_created_on>
+        <sys_id>3caeb199837b26108bbdb2b6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 13:11:09</sys_updated_on>
+        <table>item_option_new</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
