@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_752538_netflix.MediaUtilsClient</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>MediaUtilsClient</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var MediaUtilsClient = Class.create();
+MediaUtilsClient.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getMediaData: function(){
+		var media_sys_id = this.getParameter ("sysparm_media_sys_id");
+		var grMedia = new GlideRecord("x_752538_netflix_media")
+		grMedia.get(media_sys_id);
+
+		return JSON.stringify({
+			synopsis: grMedia.getValue("synopsis"),
+			average_rating:grMedia.getValue("average_rating"),
+			poster_url:grMedia.getValue("poster")
+		});
+	},
+
+    type: 'MediaUtilsClient'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 16:36:11</sys_created_on>
+        <sys_id>09e7ea5983fb26108bbdb2b6feaad330</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>MediaUtilsClient</sys_name>
+        <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
+        <sys_update_name>sys_script_include_09e7ea5983fb26108bbdb2b6feaad330</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 16:51:56</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>09e7ea5983fb26108bbdb2b6feaad330</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-04 16:36:11</sys_created_on>
+        <sys_id>9c9dee15837f26108bbdb2b6feaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-04 16:36:11</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
