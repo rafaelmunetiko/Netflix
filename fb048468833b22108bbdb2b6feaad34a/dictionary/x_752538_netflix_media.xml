@@ -10,6 +10,15 @@
                 <element inactive_on_update="false" label="Episode" sequence="1" value="episode"/>
             </choice>
         </element>
+        <element choice="1" default="1" label="Integration State" max_length="40" name="integration_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Starting" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="2" value="4"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Media not Found" sequence="4" value="7"/>
+                <element inactive_on_update="false" label="Integrating" sequence="1" value="2"/>
+            </choice>
+        </element>
         <element default="0" label="Average rating" max_length="255" name="average_rating" type="float"/>
         <element display="true" label="Title" max_length="250" name="title" type="string"/>
         <element label="Language" max_length="250" name="language" type="string"/>
@@ -21,6 +30,13 @@
         <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
         <element label="Genre" max_length="1024" name="genre" reference="x_752538_netflix_genre" type="glide_list"/>
         <element label="Release Year" max_length="4" name="release_year" type="string"/>
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="3"/>
+                <element inactive="true" inactive_on_update="true" label="Completed" sequence="1" value="2"/>
+            </choice>
+        </element>
         <element label="Awards" max_length="250" name="awards" type="string"/>
         <element label="Production" max_length="250" name="production" type="string"/>
     </element>
