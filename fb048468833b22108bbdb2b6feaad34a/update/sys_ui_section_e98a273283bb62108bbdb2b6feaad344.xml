@@ -4,13 +4,13 @@
             <element>integration_state</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-09-09 12:53:24</sys_created_on>
-            <sys_id>358a273283bb62108bbdb2b6feaad35e</sys_id>
+            <sys_created_on>2025-09-10 13:01:52</sys_created_on>
+            <sys_id>2b06bc17837322108bbdb2b6feaad397</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Integration" display_value="Integration" name="x_752538_netflix_media" sys_domain="global" view="Default view">e98a273283bb62108bbdb2b6feaad344</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-09-09 12:53:24</sys_updated_on>
+            <sys_updated_on>2025-09-10 13:01:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,15 +18,29 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-09-09 12:53:24</sys_created_on>
-            <sys_id>b98a273283bb62108bbdb2b6feaad35e</sys_id>
+            <sys_created_on>2025-09-10 13:01:52</sys_created_on>
+            <sys_id>2706bc17837322108bbdb2b6feaad398</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Integration" display_value="Integration" name="x_752538_netflix_media" sys_domain="global" view="Default view">e98a273283bb62108bbdb2b6feaad344</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-09-09 12:53:24</sys_updated_on>
+            <sys_updated_on>2025-09-10 13:01:52</sys_updated_on>
             <sys_user/>
             <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>integration_error_message</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-09-10 13:01:52</sys_created_on>
+            <sys_id>ab06bc17837322108bbdb2b6feaad398</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Integration" display_value="Integration" name="x_752538_netflix_media" sys_domain="global" view="Default view">e98a273283bb62108bbdb2b6feaad344</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-09-10 13:01:52</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption>Integration</caption>

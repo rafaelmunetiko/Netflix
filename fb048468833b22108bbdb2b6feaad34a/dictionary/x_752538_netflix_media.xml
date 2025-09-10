@@ -39,5 +39,6 @@
         </element>
         <element label="Awards" max_length="250" name="awards" type="string"/>
         <element label="Production" max_length="250" name="production" type="string"/>
+        <element label="Integration Error Message" max_length="1000" name="integration_error_message" type="string"/>
     </element>
 </database>
