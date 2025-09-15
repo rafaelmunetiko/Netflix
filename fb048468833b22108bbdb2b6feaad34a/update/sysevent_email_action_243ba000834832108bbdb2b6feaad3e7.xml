@@ -6,7 +6,7 @@
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Netflix" name="Netflix">ee20aaaa837322108bbdb2b6feaad3f0</category>
-        <collection>x_752538_netflix_review</collection>
+        <collection>x_752538_netflix_suggestion</collection>
         <condition/>
         <content_type>text/html</content_type>
         <default_interval/>
@@ -38,13 +38,13 @@
         <message/>
         <message_html><![CDATA[<p>Hello ${opened_by.first_name}</p>
 <p>&nbsp;</p>
-<p>Thank you for your review for the ${media.type} ${media.title}.</p>
-<p>It is <strong>approved</strong>.</p>
+<p>Thank you for your suggestion for the ${media.type} ${media.title}.</p>
+<p>Your suggestion <strong>already exists on our catalog</strong>.</p>
 <p><img style="margin: 20px; width: 200px; border-radius: 20px;" src="${media.poster}"></p>
-<p>If you want to send more reviews, click <a href="https://dev282117.service-now.com/sp?id=sc_cat_item&amp;sys_id=feaa3733837722108bbdb2b6feaad3ed&amp;sysparm_category=983e15498337e2108bbdb2b6feaad3d4" target="_blank" rel="noopener">here</a></p>]]></message_html>
+<p>If you want to send more suggestions, click <a href="https://dev282117.service-now.com/sp?id=sc_cat_item&amp;sys_id=feaa3733837722108bbdb2b6feaad3ed&amp;sysparm_category=983e15498337e2108bbdb2b6feaad3d4" target="_blank" rel="noopener">here</a></p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>Review Approved</name>
+        <name>Media already exists</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -55,23 +55,23 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Your review ${number} is ${state}</subject>
+        <subject>Your suggestion ${number} already exists.</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-09-05 20:30:24</sys_created_on>
+        <sys_created_on>2025-09-12 20:16:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>bbcb64b9837ba6108bbdb2b6feaad3a6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Review Approved</sys_name>
+        <sys_id>243ba000834832108bbdb2b6feaad3e7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Media already exists</sys_name>
         <sys_overrides/>
         <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
         <sys_policy/>
         <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
-        <sys_update_name>sysevent_email_action_bbcb64b9837ba6108bbdb2b6feaad3a6</sys_update_name>
+        <sys_update_name>sysevent_email_action_243ba000834832108bbdb2b6feaad3e7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-12 19:29:32</sys_updated_on>
+        <sys_updated_on>2025-09-12 20:52:04</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
