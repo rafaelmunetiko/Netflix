@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.state.toString() == "1"</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Complete</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[current.setValue("state", "3");
+current.setValue("integration_state", "3");
+
+current.update();
+ 
+var grMedia = new GlideRecord("x_752538_netflix_media");
+grMedia.addEncodedQuery("title=" + current.getValue("title") + "^type=" + current.getValue("type") + "^release_year=" + current.getValue("release_year") + "^sys_id!=" + current.getValue("sys_id"));
+grMedia.query();
+ 
+while (grMedia.next()) {
+    grMedia.setValue("state", "7");
+    grMedia.setValue("genre", "");
+    grMedia.setValue("release_date", "");
+    grMedia.setValue("release_year", "");
+    grMedia.setValue("category", "");
+    grMedia.setValue("synopsis", "");
+    grMedia.setValue("writers", "");
+    grMedia.setValue("production", "");
+    grMedia.setValue("poster", "");
+    grMedia.setValue("website", "");
+    grMedia.setValue("average_rating", "");
+    grMedia.setValue("imdb_rating", "");
+    grMedia.setValue("metascore", "");
+    grMedia.setValue("awards", "");
+    grMedia.setValue("language", "");
+    grMedia.setValue("country", "");
+    grMedia.setValue("integration_state", "3");
+    grMedia.setValue("integration_error_message", "");
+   
+    var grMediaActor = new GlideRecord("x_752538_netflix_m2m_actors_medias");
+    grMediaActor.addEncodedQuery("x_752538_netflix_media=" + grMedia.getValue("sys_id"));
+    grMediaActor.query();
+    grMediaActor.deleteMultiple();
+ 
+    var grMediaDirector = new GlideRecord("x_752538_netflix_m2m_directors_medias");
+    grMediaDirector.addEncodedQuery("x_752538_netflix_media=" + grMedia.getValue("sys_id"));
+    grMediaDirector.query();
+    grMediaDirector.deleteMultiple();
+   
+    grMedia.update();
+}
+ 
+action.setRedirectURL(current); //vai permanecer na página]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 19:05:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3c0933f4830832108bbdb2b6feaad378</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
+        <sys_update_name>sys_ui_action_3c0933f4830832108bbdb2b6feaad378</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-16 17:48:25</sys_updated_on>
+        <table>x_752538_netflix_media</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3c0933f4830832108bbdb2b6feaad378</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-15 19:05:12</sys_created_on>
+        <sys_id>ea29f3f4830832108bbdb2b6feaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-15 19:05:12</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

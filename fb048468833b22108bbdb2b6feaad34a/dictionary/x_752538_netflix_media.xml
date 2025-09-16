@@ -34,7 +34,7 @@
             <choice>
                 <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="Completed" sequence="2" value="3"/>
-                <element inactive_on_update="false" label="Movie Already in Database" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Movie Already in Database" sequence="1" value="7"/>
             </choice>
         </element>
         <element label="Awards" max_length="250" name="awards" type="string"/>
