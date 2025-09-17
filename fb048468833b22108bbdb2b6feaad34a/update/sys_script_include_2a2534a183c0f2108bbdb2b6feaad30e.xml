@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_752538_netflix.MediaUtils2</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>MediaUtils2</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var MediaUtils2 = Class.create();
+MediaUtils2.prototype = {
+    initialize: function() {
+    },
+    refQualMedia: function() {
+    var moviesNoToBeShown = []  ;
+    var grReview = new GlideRecord("x_752538_netflix_review");
+    grReview.addEncodedQuery("opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state!=4");
+    grReview.query();
+    while(grReview.next()) {
+        moviesNoToBeShown.push(grReview.media.sys_id.toString());
+    }
+var moviesToBeShown = [];
+var grMedias = new GlideRecord("x_752538_netflix_media");
+grMedias.addQuery("state", "3");
+grMedias.query();
+while(grMedias.next()){
+    if(moviesNoToBeShown.indexOf(grMedias.getUniqueValue()) == -1){
+        moviesToBeShown.push(grMedias.getUniqueValue());
+    }
+}
+return "sys_idIN" + moviesToBeShown.join(",");
+ 
+    },
+ 
+    type: 'MediaUtils2'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 12:54:17</sys_created_on>
+        <sys_id>2a2534a183c0f2108bbdb2b6feaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MediaUtils2</sys_name>
+        <sys_package display_value="Netflix" source="x_752538_netflix">fb048468833b22108bbdb2b6feaad34a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Netflix">fb048468833b22108bbdb2b6feaad34a</sys_scope>
+        <sys_update_name>sys_script_include_2a2534a183c0f2108bbdb2b6feaad30e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 12:54:17</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>2a2534a183c0f2108bbdb2b6feaad30e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 12:54:17</sys_created_on>
+        <sys_id>28777c6183c0f2108bbdb2b6feaad36d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 12:54:17</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
